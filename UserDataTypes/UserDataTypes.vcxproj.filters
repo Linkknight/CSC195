@@ -18,5 +18,13 @@
     <ClCompile Include="UserDataTypes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Sandwich.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sandwich.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

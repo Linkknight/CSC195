@@ -2,10 +2,31 @@
 //
 
 #include <iostream>
+#include "Sandwich.h";
+
+#define SHOP_NAME "Subway\n";
+
+using currency = double;
+typedef unsigned char byte;
 
 int main() 
 {
-	float balance;
+	Sandwich sandwich;
+	sandwich.Read();
+	sandwich.Write();
+
+	f1();
+	std::cout << SHOP_NAME;
+
+#ifdef _DEBUG
+	std::cout << "DEBUG\n";
+#endif _DEBUG
+
+#ifdef XBOX
+	std::cout << "XBOX";
+#endif XBOX
+
+	currency balance;
 
 	{
 		enum class Difficulty
