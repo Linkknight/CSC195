@@ -12,13 +12,14 @@ int main()
 
 	for (int i = 0; i < numEmployees; i++)
 	{
-		//call Read for each employee in the array
-		std::cout << "Please enter the information for this Employee: " << std::endl;
-		cin >> numEmployees[i];
+		Employee employee;
+		employee.Read();
 	}
 
 	for (int i = 0; i < numEmployees; i++)
 	{
-		//call Write for each employee
+		Employee worker;
+		worker = employee[i];
+		worker.Write();
 	}
 }
