@@ -7,10 +7,10 @@ class Database
 public:
 	~Database();
 
-	void Create(Animal::eType type);
+	void Create(Animal::Type type);
 	void DisplayAll();
 	void Display(std::string name);
-	void Display(Animal::eType type);
+	void Display(Animal::Type type);
 
 private:
 	std::vector<Animal*> m_animals;

@@ -27,7 +27,7 @@ int main()
 			std::cout << "2) Mammal\n";
 			int type;
 			std::cin >> type;
-			database.Create(static_cast<Animal::eType>(type));
+			database.Create(static_cast<Animal::Type>(type));
 			break;
 		case 2:
 			database.DisplayAll();
@@ -47,7 +47,7 @@ int main()
 			std::cout << "2) Mammal\n";
 			int type;
 			std::cin >> type;
-			database.Display(static_cast<Animal::eType>(type));
+			database.Display(static_cast<Animal::Type>(type));
 		}
 			break;
 		case 5:

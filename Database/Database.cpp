@@ -1,5 +1,6 @@
 #include "Database.h"
 #include "Bird.h"
+#include "Mammal.h"
 #include <iostream>
 
 Database::~Database()
@@ -12,15 +13,15 @@ Database::~Database()
 
 }
 
-void Database::Create(Animal::eType type)
+void Database::Create(Animal::Type type)
 {
 	Animal* animal = nullptr;
 	switch (type)
 	{
-	case Animal::eType::Bird:
+	case Animal::Type::Bird:
 		animal = new Bird;
 		break;
-	case Animal::eType::Mammal:
+	case Animal::Type::Mammal:
 		break;
 	default:
 		break;
@@ -50,7 +51,7 @@ void Database::Display(std::string name)
 	}
 }
 
-void Database::Display(Animal::eType type)
+void Database::Display(Animal::Type type)
 {
 	for (Animal* animal : m_animals)
 	{
