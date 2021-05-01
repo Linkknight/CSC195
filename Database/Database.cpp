@@ -22,6 +22,7 @@ void Database::Create(Animal::Type type)
 		animal = new Bird;
 		break;
 	case Animal::Type::Mammal:
+		animal = new Mammal;
 		break;
 	default:
 		break;

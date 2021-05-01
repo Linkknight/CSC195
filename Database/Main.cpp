@@ -12,9 +12,9 @@ int main()
 		//display menu
 		std::cout << "1) Create\n";
 		std::cout << "2) Display All\n";
-		std::cout << "1) Display Name\n";
-		std::cout << "1) Display Type\n";
-		std::cout << "1) Quit\n\n";
+		std::cout << "3) Display Name\n";
+		std::cout << "4) Display Type\n";
+		std::cout << "5) Quit\n\n";
 
 		std::cout << "Enter Selection: ";
 		int selection;
