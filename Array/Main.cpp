@@ -1,7 +1,7 @@
 #include "Array.h"
 #include <iostream>
 
-void DisplayArray(const n::array& a)
+void DisplayArray(const n::array<std::string, 4>& a)
 {
 	for (size_t i = 0; i < a.size(); i++)
 	{
@@ -13,26 +13,26 @@ void DisplayArray(const n::array& a)
 int main()
 {
 	std::cout << "Array\n";
-	n::array numbers{ 1,2,3,4,5,6,7,8,9,10 };
-	numbers[0] = 25;
-	DisplayArray(numbers);
+	n::array<std::string, 4>words{ "Hello", "World", "Neumont", "College" };
+	words[0] = "Welcome";
+	DisplayArray(words);
+
 	std::cout << "Copy\n";
-	n::array copy{ numbers };
-	copy[0] = 50;
-	copy[4] = 8;
+	n::array<std::string, 4> copy{ words };
+	copy[1] = "to";
 	DisplayArray(copy);
 
 	std::cout << "Swap\n";
-	numbers.swap(copy);
-	DisplayArray(numbers);
+	words.swap(copy);
+	DisplayArray(words);
 	DisplayArray(copy);
 
 	std::cout << "Fill\n";
-	copy.fill(21);
+	copy.fill("now!");
 	DisplayArray(copy);
 
-	std::cout << "Front: " << numbers.front() << std::endl;
-	std::cout << "Back: " << numbers.back() << std::endl;
-	std::cout << "Size: " << numbers.size() << std::endl;
-	std::cout << "Data: " << numbers.data() << std::endl;
+	std::cout << "Front: " << words.front() << std::endl;
+	std::cout << "Back: " << words.back() << std::endl;
+	std::cout << "Size: " << words.size() << std::endl;
+	std::cout << "Data: " << words.data() << std::endl;
 }
