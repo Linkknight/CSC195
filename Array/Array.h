@@ -14,7 +14,7 @@ namespace n
 			{
 				m_elements[i] = *iter;
 				i++
-			}
+			};
 		}
 
 		T& operator [] (size_t position) { return m_elements[position] };
@@ -56,3 +56,4 @@ namespace n
 		size_t m_size = Size;
 		T m_elements[Size]{};
 	};
+}
